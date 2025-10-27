@@ -27,5 +27,9 @@ The system alerts visually when **No Mask** is detected.
 Face Mask Detection Dataset
 https://www.kaggle.com/datasets/omkargurav/face-mask-dataset
 ## Alert System
-If mask is detected → Green bounding box
-If no mask is detected → Red bounding box & alert text shown
+-If mask is detected → Green bounding box
+-If no mask is detected → Red bounding box & alert text shown
+
+https://github.com/user-attachments/assets/12634b4b-28c4-4207-917d-fc1cddeffd67
+
+
