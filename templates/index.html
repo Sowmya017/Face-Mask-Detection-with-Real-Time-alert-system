@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Face Mask Detection — Live Demo</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #0e1422;
+      color: #e6eef6;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      color: #9aa4b2;
+      margin-bottom: 25px;
+    }
+
+    .video-box {
+      background: #111a2c;
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+      text-align: center;
+    }
+
+    .video-box img {
+      width: 100%;
+      border-radius: 10px;
+      border: 2px solid #1e293b;
+    }
+
+    .controls {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .btn {
+      padding: 10px 18px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 14px;
+      margin: 5px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: #38ef7d;
+      color: #032b1a;
+    }
+
+    .btn-secondary {
+      background: #3b82f6;
+      color: #e6eef6;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <div class="container">
+    <h1>Face Mask Detection System</h1>
+    <p>Real-time mask detection using OpenCV & TensorFlow</p>
+
+    <div class="video-container">
+    <img src="{{ url_for('video_feed') }}" alt="Video Stream">
+</div>
+
+    <div class="controls">
+      <a href="/video_feed" class="btn btn-primary">Refresh Stream</a>
+      <a href="#" class="btn btn-secondary">Download Model</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
